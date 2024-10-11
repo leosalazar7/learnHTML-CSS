@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website to practice using HTML and CSS">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="images/baki.jpg">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Leonardo Salazar</h1>
+      <hr>
+    </div>
+    <div id="about-me">
+      <p>
+        Hi, I'm Leo Salazar, a Computer Science major at the University of Central Florida with a minor in Mathematics. Though I haven't been coding for long, I'm a fast learner with a deep passion for technology and software development. I've built games, websites, apps, scripts, browser extensions, and discord bots, and I'm always excited to learn and explore new ways to solve problems with code. Whether it's creating functional and engaging user experiences or diving into backend development, I'm constantly expanding my skills and working on new projects.
+      </p>
+    </div>
+    <div class="vcard" id="vcard">
+      <div class="fn">Leo Salazar</div>
+      <div class="org">University of Central Florida</div>
+      <div class="tel">+1-555-555-5555</div>
+      <div class="email">leo.salazar@example.com</div>
+      <div class="adr">
+        <div class="street-address">123 Main St</div>
+        <div class="locality">Orlando</div>
+        <div class="region">FL</div>
+        <div class="postal-code">32801</div>
+        <div class="country-name">USA</div>
+      </div>
+    </div>
+    <br>
+    <div id="link">
+      <a href="page/">click</a>    
+    </div>
+    <div id="images">
+      <figure>
+        <img src="images/baki.jpg" alt="headshot of baki hanma" width="200px">
+        <figcaption>Headshot of Baki Hanma</figcaption>
+      </figure>
+    </div>
+    <div id="table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">A</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">B</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">C</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="register">
+      <h3>Register</h3>
+      <fieldset>
+        <legend>Account Credentials</legend>
+        <form action="api/login.php" method="post">
+          <input name="username" type="text" placeholder="Username" required>
+          <br><br>
+          <input name="password" type="password" placeholder="Password" required>
+      </fieldset>
+        <br>
+        <label>
+          Email: <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+        </label>
+        <br><br>
+        Gender:
+        <label>
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other" checked> Other
+        </label>
+        <br><br>
+        <label>
+          Birthday: <input type="date" required min="1920-01-01" max="2024-01-01">
+        </label>
+        <br><br>
+        Screen Mode:
+        <select name="screen-mode">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <br><br>
+        Profile Picture:
+        <input type="file" name="pfp">
+        <br><br>
+        <label>
+          <input name="terms" type="checkbox" value="true" required> Agree to Terms & Conditions
+        </label>
+        <br><br>
+        <button>Submit</button>
+      </form>
+    </div>
+    <br>
+    <div id="ytvid">
+      <iframe src="https://www.youtube.com/embed/37cE20pFwwQ?si=FnZoijkHgVuNjhvy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    &copy; Leo Salazar
+    <script src="scripts.js"></script>
+  </body>
+</html>
