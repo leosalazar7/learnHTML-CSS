@@ -42,6 +42,10 @@ body {
 
 #vcard {
     background-color: lightyellow;
+    background-image: url("images/baki.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: 20px;
 }
 
